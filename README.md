@@ -5,7 +5,7 @@
 - [v3 Version Tailwind](https://mmanuch.github.io/v3/)
 
 
-    align-items: center;
+    - align-items: center;
     background: linear-gradient(orange, yellow);
     background-attachment: fixed;
     background-color: aqua;
@@ -38,4 +38,4 @@
     text-decoration: none;
     vertical-align: center;
     width: 100%;
-    
+    -
