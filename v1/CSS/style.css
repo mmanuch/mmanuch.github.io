@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0.5rem;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 10px;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#opinion {
+    background: linear-gradient(aqua, red);
+}
+
+section p {
+    background: linear-gradient(orange, yellow);
+    opacity: 85%;
+    width: 100%;
+}
+
+body {
+    padding: 15px;
+}
+
+footer p {
+    background-color: aqua;
+}
+
+.slider {
+    margin: auto;
+    width: 100vh;
+    height: 53vh;
+    display: grid;
+    grid-auto-columns: auto;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -moz-border-radius: 50px;
+    border-radius: 25px;
+}
+
+.slider img {
+    scroll-snap-align: start;
+    object-fit: cover;
+    width: 100vh;
+    height: 50vh;
+}
+
+.rool  {
+    display: flex;
+    flex: ;
+    background: black;
+}
+
+h3{
+color:red;
+
+}
+
+header {
+    background-color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body {
+    background-image: url('../img/background-of-an-astronaut-on-the-mars-looking-at-the-planet.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div {
+    display: flex;
+    width: 100%;
+}
+
+p {
+    color: brown !important;
+    font-weight: 900;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1 {
+    color: black !important;
+    font-weight: 900;
+    font-style: oblique;
+    font-family: "SimpleCandy";
+
+}
+
+h2 {
+    color: black !important;
+    font-weight: 900;
+    font-style: oblique;
+    font-family: "SimpleCandy";
+    background-color: red;
+
+}
+
+@font-face {
+    font-family: 'Simplecandy';
+    src: url('../font/SIMPLECANDY.ttf');
+    font-weight: normal;
+    color: rgba(0, 0, 0, '0.5');
+    color: #000;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('../font/Nexa-Trial-Bold.ttf');
+    font-weight: bold;
+}
+
+img {
+    width: 20%;
+    border: solid rgb(255, 175, 71) 10px;
+}
+
+video {
+    width: 20%;
+}
+
+table {
+    background-color: rgba(235, 126, 63, 0.801);
+    border: dotted white 5px;
+}
+
+th {
+    width: 25%;
+    text-align: center;
+    vertical-align: center;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+td {
+    width: 25%;
+    text-align: left;
+    vertical-align: center;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+.ocultar {
+    display: none;
+
+}
