@@ -1,8 +1,8 @@
--[v0 Version Original](https://mmanuch.github.io/v0/)
--[v1 Version CSS](https://mmanuch.github.io/v1/)
--[v2.1 Plantilla original](https://mmanuch.github.io/v2.1/)
--[v2.2 Plantilla modificada](https://mmanuch.github.io/v2.2/)
--[v3 Version Tailwind](https://mmanuch.github.io/v3/)
+- [v0 Version Original](https://mmanuch.github.io/v0/)
+- [v1 Version CSS](https://mmanuch.github.io/v1/)
+- [v2.1 Plantilla original](https://mmanuch.github.io/v2.1/)
+- [v2.2 Plantilla modificada](https://mmanuch.github.io/v2.2/)
+- [v3 Version Tailwind](https://mmanuch.github.io/v3/)
 
 
     align-items: center;
