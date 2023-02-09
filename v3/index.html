@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Manuel A. Chaves Herrera">
+    <meta description="Página web sobre la película 'The Martian'">
+    <meta keywords="Martian">
+    <title>The Martian fanpage</title>
+    <link rel="shortcut icon" href="img/icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[url('../img/background-of-an-astronaut-on-the-mars-looking-at-the-planet.jpg')] bg-cover bg-fixed">
+    <header>
+        <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+            <div class="container flex flex-wrap items-center justify-between mx-auto">
+                <a href="https://flowbite.com/" class="flex items-center">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">The Martian Fan
+                        Page Oficial</span>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent 
+                                md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#director" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100
+                                 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 
+                                 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 
+                                 dark:hover:text-white md:dark:hover:bg-transparent">Director</a>
+                        </li>
+                        <li>
+                            <a href="#personajes" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 
+                                md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 
+                                dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 
+                                dark:hover:text-white md:dark:hover:bg-transparent">Personajes</a>
+                        </li>
+                        <li>
+                            <a href="#plataformas" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 
+                                md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 
+                                dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 
+                                dark:hover:text-white md:dark:hover:bg-transparent">Plataformas de Streaming</a>
+                        </li>
+                        <li>
+                            <a href="#media" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100
+                                 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 
+                                 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 
+                                 dark:hover:text-white md:dark:hover:bg-transparent">Media</a>
+                        </li>
+                        <li>
+                            <a href="#opinion" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 
+                                md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 
+                                dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 
+                                dark:hover:text-white md:dark:hover:bg-transparent">Opinion</a>
+                        </li>
+                        <li>
+                            <a href="#links" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 
+                                md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 
+                                dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 
+                                dark:hover:text-white md:dark:hover:bg-transparent">Links</a>
+                        </li>
+                        <li>
+                            <a href="#premios" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100
+                                 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 
+                                 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 
+                                 dark:hover:text-white md:dark:hover:bg-transparent">Premios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="bg-orange-700">
+        <p>
+            The Martian (conocida en Hispanoamérica como Misión rescate y en España como Marte (The Martian​)
+            es una película estadounidense de ciencia ficción de 2015 dirigida por Ridley Scott y escrita por Drew
+            Goddard.
+            Sus protagonistas son Matt Damon, Jessica Chastain, Kristen Wiig, Jeff Daniels, Michael Peña, Kate Mara,
+            Sea, Bean,
+            Sebastian Stan, Aksel Hennie, Donald Glover, Mackenzie Davis y Chiwetel Ejiofor.
+            La película está basada en la novela de Andy Weir publicada en 2011 El marciano (The Martian).
+        </p>
+    </div>
+    <div class="director">
+        <h2 class="bg-gray-700" id="director"> Director</h2>
+        <p class="text-white">
+            Ridley Scott (South Shields, Inglaterra; 30 de noviembre de 1937) es un director de cine, productor y
+            guionista británico.
+            Su filmografía va desde su despegue comercial con la película de terror y ciencia ficción Alien (1979),
+            hasta otros trabajos como el filme distópico neo-noir Blade Runner (1982), la road movie Thelma y Louise
+            (1991),
+            el péplum y drama histórico ganador del Óscar a la mejor película Gladiator (2000) y el film de ciencia
+            ficción The Martian (2015).
+        </p>
+        <img src="img/Director.jpg" class="w-[300px]">
+    </div>
+    <div>
+        <h2 class="bg-gray-700" id="personajes"> Personajes</h2>
+        <p class="text-white">Esta película ha tenido un gran reparto y con el cual se ha logrado transmitir lo que se
+            buscaba a los
+            personajes
+        </p>
+        <p class="text-white">Los mas importantes son:</p>
+        <div>
+            <p class="text-white"> <a href="https://es.wikipedia.org/wiki/Matt_Damon" target="_blank"> Matt Damon </a>
+                (nuestro actor
+                favorito)
+                como Mark
+                Watney,
+                botánico e ingeniero mecánico. Astronauta.</p>
+            <img src="img/Matt_Damon_TIFF_2015.jpg" class="w-[300px]">
+        </div>
+        <div>
+            <p class="text-white"> <a href="https://es.wikipedia.org/wiki/Jessica_Chastain" target="_blank">Jesica
+                    Chastain</a> como
+                Melissa
+                Lewis, comandante
+                y
+                geóloga de la Misión a Marte Ares III.</p>
+            <img src="img/Jesica.jfif" class="w-[300px]">
+        </div>
+        <div>
+            <p class="text-white"><a href="https://es.wikipedia.org/wiki/Chiwetel_Ejiofor" target="_blank">Chiwetel
+                    Ejiofor</a> como Venkat
+                Kapoor, Director de
+                la
+                Misión a Marte Ares III.</p>
+            <img src="img/Chiwetel.jfif" class="w-[300px]">
+        </div>
+        <div>
+            <p class="text-white"><a href="https://es.wikipedia.org/wiki/Donald_Glover" target="_blank"> Donald
+                    Glover</a> como Rich
+                Purnell,
+                Especialista en
+                astrodinámica del JPL de la NASA.</p>
+            <img src="img/Donal.jfif" class="w-[300px]">
+        </div>
+        <div>
+            <p class="text-white"> <a href="https://es.wikipedia.org/wiki/Michael_Pe%C3%B1a" target="_blank">Michael
+                    Peña </a>como Rick
+                Martinezpiloto,
+                ingeniero y
+                astronauta Ares III.</p>
+            <img src="img/Peña.jfif" class="w-[300px]">
+        </div>
+    </div>
+    <section class="bg-gray-700">
+        <h2 class="bg-gray-700" id="plataformas"> Plataformas </h2>
+        <p>Esta película como muchas otras está disponible en muchísimas plataformas, pero aquí os vamos a dejar un par
+            muy
+            recomendadas.</p>
+        <p class="text-white">Si lo que quieres es verla solo una vez tienes disponible:</p>
+        <table>
+            <tr>
+                <th colspan="2">Plataformas</th>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://www.disneyplus.com/es-es?&cid=DSS-Search-Google-71700000064567613-&s_kwcid=AL!8468!3!609101599163!e!!g!!disney%2B&gclid=CjwKCAiA7IGcBhA8EiwAFfUDsY_5KcgL3OBe48s4PUWpi3vp1uMlgmPe4FrlGhmZ-itD5vaXy_6lDhoCE4sQAvD_BwE&gclsrc=aw.ds"
+                        target="_blank">Disney+</a>
+                </td>
+                <td>(Necesario tener una cuenta)</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.apple.com/es/apple-tv-plus/" target="_blank">Apple Tv</a></td>
+                <td rowspan="3">(Necesario tener una cuenta y a demás pagar 3,99€)</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://www.primevideo.com/?ref_=dvm_pds_amz_ES_lb_s_g_mkw_s8iMAjVKa-dc_pcrid_620160443945&mrntrk=slid__pgrid_84338513703_pgeo_20272_x__ptid_kwd-296527732991"
+                        target="_blank">
+                        Prime Video</a>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://rakuten.tv/es" target="_blank">Rakuten Tv</a></td>
+            </tr>
+        </table>
+        <p class="text-white">Si lo que quieres es comprarla y tenerla guardada para ti tienes disponible:</p>
+        <table>
+            <tr>
+                <th colspan="2">Plataformas</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.apple.com/es/apple-tv-plus/" target="_blank">Apple Tv</a></td>
+                <td rowspan="2">(por tan solo 9,99€)</td>
+            </tr>
+            <tr>
+                <td><a href="https://rakuten.tv/es" target="_blank">Rakuten Tv</a></td>
+            </tr>
+        </table>
+    </section>
+    <div>
+        <h2 class="bg-gray-700" id="media"> Media</h2>
+        <div>
+            <p class="text-white">Trailer Oficial en español</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TYzLCBh_S-I"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div>
+            <p class="text-white">La portada se ha hecho muy viral por la capacidad de Matt de transmitir toda una
+                pelicula en una simple
+                foto
+            </p>
+            <img class="h-auto max-w-full" src="img/Portada.jfif" alt="image description">
+        </div>
+        <div>
+            <p class="text-white">La tripulación de la Misión a Marte Ares III. </p>
+            <img class="rounded-full w-96 h-96" src="img/tripulación.jfif" alt="tripulacion de la mision">
+        </div>
+        <div>
+            <p class="text-white">Cultivos de patata con los que pudo sobrevivir el tiempo suficiente</p>
+            <img class="h-auto max-w-xl rounded-lg shadow-xl dark:shadow-gray-800" src="img/cultivos.jfif"
+                alt="cultivos de marte">
+        </div>
+        <div>
+            <p class="text-white">Medio de transporte que ha sido vital para poder moverse a largas distacias</p>
+
+
+            <figure class="max-w-lg">
+                <img class="h-auto max-w-full rounded-lg" src="img/Transporte.jfif" alt="image description">
+
+            </figure>
+
+        </div>
+        <section class="recomendación">
+            <video src="img/manu.MOV">
+
+            </video>
+            <p class="text-white">Si no puedes iniciar el video, debes darle click derecho y "mostrar todos los
+                controles"</p>
+            <img src="img/click _derecho.png">
+        </section>
+
+    </div>
+    <section class="opinion">
+        <h2 class="bg-gray-700" id="opinion"> Opinion</h2>
+
+
+        <form>
+            <div class="relative z-0 w-full mb-6 group">
+                <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 
+                    border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 
+                    dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" " required />
+                <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 
+                    duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 
+                    peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 
+                    peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
+            </div>
+            <div class="relative z-0 w-full mb-6 group">
+                <input type="password" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 
+                    border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 
+                    focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 
+                    transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 
+                    peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 
+                    peer-focus:scale-75 peer-focus:-translate-y-6">Contraseña</label>
+            </div>
+            <div class="relative z-0 w-full mb-6 group">
+                <input type="password" name="repeat_password" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 
+                    appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none 
+                    focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform 
+                    -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 
+                    peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 
+                    peer-focus:scale-75 peer-focus:-translate-y-6">Confirma la contraseña</label>
+            </div>
+            <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-6 group">
+                    <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 
+                        border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 
+                        focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                    <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 
+                        transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 
+                        peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 
+                        peer-focus:scale-75 peer-focus:-translate-y-6">Nombre</label>
+                </div>
+                <div class="relative z-0 w-full mb-6 group">
+                    <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 
+                        border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500
+                         focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                    <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 
+                        transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600
+                         peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 
+                         peer-focus:scale-75 peer-focus:-translate-y-6">Apellidos</label>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-6 group">
+                    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300
+                         appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 
+                         focus:border-blue-600 peer" placeholder=" " required />
+                    <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform 
+                        -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 
+                        peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 
+                        peer-focus:scale-75 peer-focus:-translate-y-6">Telefono</label>
+                </div>
+                <div class="relative z-0 w-full mb-6 group">
+                    <input type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300
+                         appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none 
+                         focus:ring-0 focus:border-blue-600 peer" placeholder=" " required>
+                    <label for="floating_company"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform
+                         -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 
+                         peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 
+                         peer-focus:scale-75 peer-focus:-translate-y-6">Dejanos tu opinion</label>
+                </div>
+            </div>
+            <button type="submit"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 
+                font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 
+                dark:focus:ring-blue-800">Submit</button>
+        </form>
+
+    </section>
+    <section>
+        
+    </section>
+    <section class="links">
+        
+        <h2 class="bg-gray-700" id="links"> Links</h2>
+        
+        <div>
+        <p class="text-white">Por si aún tienes ganas de saber más sobre esta maravillova película, aquí te dejo un par
+            de enlaces con
+            información extra:)</p>
+        <a class="text-blue-700" href="https://es.wikipedia.org/wiki/The_Martian" target="_blank">Wikipedia</a>
+
+        <a class="text-blue-700" href="https://www.filmaffinity.com/es/film846099.html" target="_blank">Filmaffinity</a>
+
+        <a class="text-blue-700" href="https://www.lavanguardia.com/peliculas-series/peliculas/marte-the-martian-286217"
+            target="_blank">La
+            vanguardia</a>
+    </section>
+    <section class="premios">
+        <h2 class="bg-gray-700" id="premios"> Premios</h2>
+        <p class="text-white">Como no cabe duda, The Martian ha sido seleccionada a grandes premios y ha ganado la mayor
+            parte de ellos.
+        </p>
+        <table class="bg-blue-500 flex justify-center border-red">
+            <tr>
+                <th rowspan="12">2015</th>
+                <td>Premios Oscar: 7 nominaciones incluyendo mejor película y actor (Damon)</td>
+            </tr>
+            <tr>
+                <td>Globos de Oro: Mejor película comedia y actor (Damon)</td>
+            </tr>
+            <tr>
+                <td>Premios BAFTA: 6 nominaciones, incluyendo mejor Director</td>
+            </tr>
+            <tr>
+                <td>National Board Review: Top 10, director, actor (Damon), guión adaptado</td>
+            </tr>
+            <tr>
+                <td>American Film Institute (AFI): Top 10 - Mejores películas del año</td>
+            </tr>
+            <tr>
+                <td>Satellite Awards: Mejor sonido. 9 nominaciones</td>
+            </tr>
+            <tr>
+                <td>Sindicato de Productores (PGA): Nominada a mejor película</td>
+            </tr>
+            <tr>
+                <td>Sindicato de Directores (DGA): Nominada a mejor director</td>
+            </tr>
+            <tr>
+                <td>Sindicato de Guionistas (WGA): Nominada a mejor guion adaptado</td>
+            </tr>
+            <tr>
+                <td>Critics Choice Awards: 9 nominaciones incluyendo mejor película y director</td>
+            </tr>
+            <tr>
+                <td>Asociación de Críticos de Chicago: Nominada a mejor montaje</td>
+            </tr>
+            <tr>
+                <td>Círculo de Críticos de San Francisco: Nominada a mejor guion adaptado</td>
+            </tr>
+        </table>
+    </section>
+    <footer class="bg-gray-700">
+        <p>
+            Por último, si te ha gustado la página no dudes en compartirla con tus amigos y
+            familiares para que se la vean y así poder hablar sobre ella en las comidas familiares o tomando una caña.
+        </p>
+    </footer>
+</body>
+
+</html>
