@@ -4,7 +4,7 @@
 # [v2.2 Plantilla modificada](https://mmanuch.github.io/v2.2/)
 # [v3 Version Tailwind](https://mmanuch.github.io/v3/)
 
-
+#### Elementos usados para la versión V1
     - align-items: center;
     - background: linear-gradient(orange, yellow);
     - background-attachment: fixed;
